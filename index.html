@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hướng Dẫn Viên Ảo</title>
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    #chat-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    img.avatar {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Avatar của hướng dẫn viên -->
+  <img src="avatar.png" alt="Hướng dẫn viên ảo" class="avatar">
+
+  <div id="chat-box">
+    <h1>Hướng Dẫn Viên Ảo Thái Nguyên</h1>
+    <input type="text" id="user-input" placeholder="Hỏi về Thái Nguyên..." />
+    <button onclick="sendMessage()">Gửi</button>
+    <p id="chat-output"></p>
+  </div>
+
+  <!-- Đoạn mã JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
